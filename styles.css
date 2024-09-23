@@ -1,0 +1,102 @@
+:root{
+    --primary-hover-color: hsl(178, 100%, 50%);
+    --primary-color: hsl(215, 51%, 70%);
+    --secondary-color-bg: hsl(217, 54%, 11%);
+    --tertiary-color-bg: hsl(216, 50%, 16%)
+}
+
+body{
+    font-family: "Outfit", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+
+.container{
+    background-color: var(--tertiary-color-bg);
+    padding: 1rem 1em;
+    border-radius: 30px;
+    width: 20em;
+}
+
+.content{
+    text-align: left;
+}
+
+article img{
+    border-radius: 10px;
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-icon{
+    margin-right: 8px;
+}
+
+.price{
+    color: var(--primary-hover-color);
+    font-weight: bold;
+}
+
+.owner{
+    display: flex;
+    align-items: center;
+    color: gray;
+}
+
+.owner img{
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.creator_link:hover, .content_title:hover{
+    color: var(--primary-hover-color);
+}
+
+.image-nft{
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.image-nft img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.icon-overlay{
+    font-size: 40px;
+}
+.image-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.image-nft:hover .image-overlay{
+    opacity: 1;
+}
